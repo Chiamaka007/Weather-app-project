@@ -23,115 +23,117 @@
     <link href="src/styles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container">
-      <div class="weather-app">
-        <section class="Top-info">
-          <div class="form-search">
-            <form id="searchFor-city">
-              <input
-                id="search-for-city-form"
-                class="search-form"
-                type="text"
-                placeholder="Search for a City"
-                autofocus
-              />
-              <button type="search" class="button-search">🔍</button>
-              <button type="location" id="button-location">📍</button>
-            </form>
-          </div>
-          <div class="today">
-            <h2><span id="currentCity"></span></h2>
-            <span class="date-time" id="today-date">
-              <span id="date"></span>
-            </span>
-          </div>
-        </section>
-        <header class="weather-today">
-          <h1>
-            <span class="weatherEmoji">🌦️</span><span id="temperature"></span>
-            <span class="units">
-              <a href="#" id="celsius">°C</a> |
-              <a href="#" id="fahrenheight">°F</a>
-            </span>
-          </h1>
-          <p>
-            <span id="description"></span>
-            <br />
-            Humidity:<span id="humidity"></span> %
-            <br />
-            Wind:<span id="wind"></span> Km/h
-          </p>
-        </header>
-
-        <section class="bottom-info">
-          <h3>FORECAST</h3>
-          <div class="row forecast">
-            <div class="col day">
-              <strong>
-                Fri
-                <br />
-                <br />
-                <span class="emoji"> 🌩️ </span>
-                <br />
-                28°21°
-              </strong>
+    <div id="root">
+      <div class="container">
+        <div class="weather-app">
+          <section class="Top-info">
+            <div class="form-search">
+              <form id="searchFor-city">
+                <input
+                  id="search-for-city-form"
+                  class="search-form"
+                  type="text"
+                  placeholder="Search for a City"
+                  autofocus
+                />
+                <button type="search" class="button-search">🔍</button>
+                <button type="location" id="button-location">📍</button>
+              </form>
             </div>
-
-            <div class="col day">
-              <strong>
-                Sat
-                <br />
-                <br />
-                <span class="emoji"> 🌩️ </span>
-                <br />
-                28°21°
-              </strong>
+            <div class="today">
+              <h2><span id="currentCity"></span></h2>
+              <span class="date-time" id="today-date">
+                <span id="date"></span>
+              </span>
             </div>
+          </section>
+          <header class="weather-today">
+            <h1>
+              <span class="weatherEmoji">🌦️</span><span id="temperature"></span>
+              <span class="units">
+                <a href="#" id="celsius">°C</a> |
+                <a href="#" id="fahrenheight">°F</a>
+              </span>
+            </h1>
+            <p>
+              <span id="description"></span>
+              <br />
+              Humidity:<span id="humidity"></span> %
+              <br />
+              Wind:<span id="wind"></span> Km/h
+            </p>
+          </header>
 
-            <div class="col day">
-              <strong>
-                Sun
-                <br />
-                <br />
-                <span class="emoji"> 🌧️ </span>
-                <br />
-                31°21°
-              </strong>
+          <section class="bottom-info">
+            <h3>FORECAST</h3>
+            <div class="row forecast">
+              <div class="col day">
+                <strong>
+                  Fri
+                  <br />
+                  <br />
+                  <span class="emoji"> 🌩️ </span>
+                  <br />
+                  28°21°
+                </strong>
+              </div>
+
+              <div class="col day">
+                <strong>
+                  Sat
+                  <br />
+                  <br />
+                  <span class="emoji"> 🌩️ </span>
+                  <br />
+                  28°21°
+                </strong>
+              </div>
+
+              <div class="col day">
+                <strong>
+                  Sun
+                  <br />
+                  <br />
+                  <span class="emoji"> 🌧️ </span>
+                  <br />
+                  31°21°
+                </strong>
+              </div>
+
+              <div class="col day">
+                <strong>
+                  Mon
+                  <br />
+                  <br />
+                  <span class="emoji"> 🌧️ </span>
+                  <br />
+                  31°21°
+                </strong>
+              </div>
+
+              <div class="col day">
+                <strong>
+                  Tue
+                  <br />
+                  <br />
+
+                  <span class="emoji"> 🌩️ </span>
+                  <br />
+                  30°21°
+                </strong>
+              </div>
             </div>
-
-            <div class="col day">
-              <strong>
-                Mon
-                <br />
-                <br />
-                <span class="emoji"> 🌧️ </span>
-                <br />
-                31°21°
-              </strong>
-            </div>
-
-            <div class="col day">
-              <strong>
-                Tue
-                <br />
-                <br />
-
-                <span class="emoji"> 🌩️ </span>
-                <br />
-                30°21°
-              </strong>
-            </div>
-          </div>
-        </section>
-        <h6>
-          Open sourced on
-          <a
-            href="https://github.com/Chiamaka007/Weather-app-project"
-            target="_blank"
-            >Github</a
-          >
-          by Chiamaka Ugoji
-        </h6>
+          </section>
+          <h6>
+            <a
+              href="https://github.com/Chiamaka007/Weather-app-project"
+              target="_blank"
+            >
+              Open sourced on Github</a
+            >
+            by Chiamaka Ugoji
+          </h6>
+        </div>
       </div>
     </div>
     <script src="src/index.js"></script>
