@@ -75,12 +75,11 @@ a:hover {
 .container {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800px;
-  max-width: 100%;
+  max-width: 800px;
   padding: 20px;
   border-radius: 10px;
   color: #0f2c34;
   background: rgba(231, 231, 231, 0.5);
-  width: 800px;
   height: 550px;
 }
 
