@@ -42,6 +42,8 @@ a:hover {
   background: url(../image/sky.jpg);
   background-size: cover;
   padding: 68px 20px;
+  max-width: 100%;
+  height: auto;
 }
 .search-form {
   width: 450px;
