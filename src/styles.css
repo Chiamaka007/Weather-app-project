@@ -1,6 +1,6 @@
 h1 {
   font-size: 60px;
-  margin-top: 50px;
+  margin-top: 30px;
   text-align: center;
 }
 h2 {
@@ -11,11 +11,13 @@ h6 {
   margin: 0;
   color: #fff;
   position: relative;
-  top: -40px;
+  top: -90px;
 }
 p {
   text-align: center;
   font-size: 20px;
+  position: relative;
+  bottom: 30px;
 }
 button {
   border-radius: 20px;
@@ -43,7 +45,7 @@ a:hover {
   background-size: cover;
   padding: 68px 20px;
   max-width: 100%;
-  height: auto;
+  height: 690px;
 }
 .search-form {
   width: 450px;
@@ -56,20 +58,16 @@ a:hover {
 .bottom-info {
   display: block;
   margin: 0;
-  height: 100px;
+  height: 80px;
   font-size: 18px;
   padding: 20px 0 20px 100px;
   position: relative;
-  bottom: 180px;
+  bottom: 210px;
   right: 50px;
 }
 .day {
-  border: 1px solid #0c242e;
-  border-radius: 30px;
-  transition: all 200ms ease-in-out;
   margin: auto;
   text-align: center;
-  box-shadow: 0 0 5px 1px;
 }
 .date-time {
   font-size: 20px;
@@ -82,7 +80,7 @@ a:hover {
   border-radius: 10px;
   color: #0f2c34;
   background: rgba(231, 231, 231, 0.5);
-  height: 550px;
+  height: 500px;
 }
 
 .today {
