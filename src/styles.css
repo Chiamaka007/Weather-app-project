@@ -28,6 +28,9 @@ button {
   border: 0.7px solid #574a5b;
   background: rgba(231, 231, 231, 0.5);
 }
+a {
+  text-decoration: none;
+}
 button:hover {
   background: #fff;
 }
@@ -74,6 +77,7 @@ button:hover {
   font-size: 20px;
 }
 .container {
+  position: relative;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800px;
   width: 800px;
@@ -108,10 +112,10 @@ button:hover {
 #description {
   text-transform: capitalize;
 }
-.active {
+.weather-today .active {
   color: #574a5b;
   cursor: default;
 }
-.active:hover {
+.weather-today .active:hover {
   text-decoration: none;
 }

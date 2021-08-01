@@ -107,20 +107,21 @@ getGeolocation.addEventListener("click", getGeolocationCoordinates);
 
 function changeTofahrenheight(event) {
   event.preventDefault();
+  celsiusLink.classlist.remove("active");
+  fahrenheightLink.classlist.add("active");
   let temperatureElement = document.querySelector("#temperature");
-  // celsiusLink.classlist.add("active");
-  // fahrenheightLink.classlist.remove("active");
   let fahrenheightTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheightTemperature);
 }
 
 function changeToCelsius(event) {
   event.preventDefault();
-  // celsiusLink.classlist.add("active");
-  // fahrenheightLink.classlist.remove("active");
+  celsiusLink.classlist.add("active");
+  fahrenheightLink.classlist.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
+
 let fahrenheightLink = document.querySelector("#fahrenheight");
 fahrenheightLink.addEventListener("click", changeTofahrenheight);
 
