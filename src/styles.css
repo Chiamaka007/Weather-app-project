@@ -46,6 +46,7 @@ button:hover {
   background-size: cover;
   padding: 68px 20px;
   height: 630px;
+  width: 100%;
 }
 .search-form {
   width: 60%;
