@@ -48,7 +48,7 @@ a:hover {
   height: 690px;
 }
 .search-form {
-  width: 450px;
+  width: 60%;
   border-radius: 20px;
   outline: none;
   height: 40px;
@@ -75,7 +75,7 @@ a:hover {
 .container {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800px;
-  width: 800px;
+  max-width: 60%;
   padding: 20px;
   border-radius: 10px;
   color: #574a5b;
