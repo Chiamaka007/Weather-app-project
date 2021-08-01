@@ -48,6 +48,9 @@ function showTemperature(response) {
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
   );
+
+  celsiusTemperature = response.data.main.temp;
+
   document.querySelector("#currentCity").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
@@ -102,20 +105,26 @@ function getGeolocationCoordinates() {
 let getGeolocation = document.querySelector("#button-location");
 getGeolocation.addEventListener("click", getGeolocationCoordinates);
 
-// function changeTofahrenheight(event) {
-//   event.preventDefault();
-//   let fahrenheightTemp = document.querySelector("#temperature");
-//   fahrenheightTemp.innerHTML = Math.round((response.data.main.temp * 9) / 5);
-// }
+function changeTofahrenheight(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  // celsiusLink.classlist.add("active");
+  // fahrenheightLink.classlist.remove("active");
+  let fahrenheightTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheightTemperature);
+}
 
-// let fahrenheightLink = document.querySelector("#fahrenheight");
-// fahrenheightLink.addEventListener("click", changeTofahrenheight);
+function changeToCelsius(event) {
+  event.preventDefault();
+  // celsiusLink.classlist.add("active");
+  // fahrenheightLink.classlist.remove("active");
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+let fahrenheightLink = document.querySelector("#fahrenheight");
+fahrenheightLink.addEventListener("click", changeTofahrenheight);
 
-// function changeToCelsius(event) {
-//   event.preventDefault();
-//   let celsiusTemp = document.querySelector("#temperature");
-//   celsiusTemp.innerHTML = Math.round(response.data.main.temp);
-// }
+let celsiusLink = document.querySelector("#celsius");
+celsiusLink.addEventListener("click", changeToCelsius);
 
-// let celsiusLink = document.querySelector("#celsius");
-// celsiusLink.addEventListener("click", changeToCelsius);
+let celsiusTemperature = "null";
