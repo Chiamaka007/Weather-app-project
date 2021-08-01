@@ -35,6 +35,7 @@
                   type="text"
                   placeholder="Search for a City"
                   autofocus
+                  autocomplete="off"
                 />
                 <button type="search" class="button-search">🔍</button>
                 <button type="location" id="button-location">📍</button>
@@ -55,17 +56,17 @@
                 <a href="#" id="fahrenheight">°F</a>
               </span>
             </h1>
-            <p>
-              <span id="description"></span>
-              <br />
-              Humidity:<span id="humidity"></span> %
-              <br />
-              Wind:<span id="wind"></span> Km/h
-            </p>
+            <ul>
+              <li><span id="description"></span></li>
+
+              <li>Humidity:<span id="humidity"></span> %</li>
+
+              <li>Wind:<span id="wind"></span> Km/h</li>
+            </ul>
           </header>
 
           <section class="bottom-info">
-            <h3>FORECAST</h3>
+            <!-- <h3>FORECAST</h3> -->
             <div class="row forecast">
               <div class="col day">
                 <strong>
