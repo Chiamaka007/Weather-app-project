@@ -107,8 +107,8 @@ getGeolocation.addEventListener("click", getGeolocationCoordinates);
 
 function changeTofahrenheight(event) {
   event.preventDefault();
-  celsiusLink.classlist.remove("active");
-  fahrenheightLink.classlist.add("active");
+  celsiusLink.classList.remove("active");
+  fahrenheightLink.classList.add("active");
   let temperatureElement = document.querySelector("#temperature");
   let fahrenheightTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheightTemperature);
@@ -116,8 +116,8 @@ function changeTofahrenheight(event) {
 
 function changeToCelsius(event) {
   event.preventDefault();
-  celsiusLink.classlist.add("active");
-  fahrenheightLink.classlist.remove("active");
+  celsiusLink.classList.add("active");
+  fahrenheightLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
