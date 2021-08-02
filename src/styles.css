@@ -26,14 +26,15 @@ button {
   border: 0.7px solid #574a5b;
   background: rgba(231, 231, 231, 0.5);
 }
-
+a {
+  text-decoration: none;
+}
 button:hover {
   background: #fff;
 }
 
 .github-link {
-  text-decoration: none;
-  color: #9c4d7e;
+  color: #fff;
   transition: all 200ms ease-in-out;
 }
 .github-link:hover {
@@ -44,10 +45,10 @@ button:hover {
 #root {
   background: url(../image/purplesky.jpg);
   background-size: cover;
-  padding: 60px;
+  padding: 68px 20px;
 }
 .search-form {
-  width: 70%;
+  width: 80%;
   border-radius: 20px;
   outline: none;
   height: 40px;
@@ -74,7 +75,6 @@ button:hover {
 .units {
   position: relative;
   top: -30px;
-  right: 10px;
   font-size: 20px;
 }
 .weather-forecast-temperature-max {
