@@ -46,7 +46,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
@@ -133,10 +132,6 @@ function handleSubmit(event) {
   let currentCity = document.querySelector("#search-for-city-form").value;
   searchCity(currentCity);
 }
-let citySearch = document.querySelector("#searchFor-city");
-citySearch.addEventListener("submit", handleSubmit);
-searchCity("London");
-//bonus section
 
 function getPosition(position) {
   let apiKey = "52c27b823b5e4605e95077da47ea6eb2";
@@ -151,3 +146,7 @@ function getGeolocationCoordinates() {
 
 let getGeolocation = document.querySelector("#button-location");
 getGeolocation.addEventListener("click", getGeolocationCoordinates);
+
+let citySearch = document.querySelector("#searchFor-city");
+citySearch.addEventListener("submit", handleSubmit);
+searchCity("London");
