@@ -48,11 +48,9 @@ button:hover {
   background: url(../image/purplesky.jpg);
   background-size: cover;
   padding: 68px 20px;
-  height: 630px;
-  max-width: 100%;
 }
 .search-form {
-  max-width: 100%;
+  width: 50%;
   border-radius: 20px;
   outline: none;
   height: 40px;
