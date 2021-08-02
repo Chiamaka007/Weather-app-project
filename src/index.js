@@ -20,18 +20,18 @@ function formatDate(timestamp) {
     "Saturday",
   ];
   let months = [
-    "Jan",
-    "Feb",
+    "January",
+    "February",
     "March",
     "April",
     "May",
     "June",
     "July",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
   let month = months[now.getMonth()];
   let day = days[now.getDay()];
@@ -96,8 +96,6 @@ function showTemperature(response) {
     response.data.main.temp
   );
 
-  celsiusTemperature = response.data.main.temp;
-
   document.querySelector("#currentCity").innerHTML = response.data.name;
   document.querySelector("#humidity").innerHTML = Math.round(
     response.data.main.humidity
@@ -153,28 +151,3 @@ function getGeolocationCoordinates() {
 
 let getGeolocation = document.querySelector("#button-location");
 getGeolocation.addEventListener("click", getGeolocationCoordinates);
-
-function changeTofahrenheight(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheightLink.classList.add("active");
-  let temperatureElement = document.querySelector("#temperature");
-  let fahrenheightTemperature = (celsiusTemperature * 9) / 5 + 32;
-  temperatureElement.innerHTML = Math.round(fahrenheightTemperature);
-}
-
-function changeToCelsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheightLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let fahrenheightLink = document.querySelector("#fahrenheight");
-fahrenheightLink.addEventListener("click", changeTofahrenheight);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", changeToCelsius);
-
-let celsiusTemperature = "null";

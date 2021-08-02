@@ -1,17 +1,15 @@
 h1 {
   font-size: 60px;
-  margin-top: 30px;
   text-align: center;
 }
 h2 {
   font-size: 40px;
-  margin: 100px 0 0 0;
+  margin-top: 20px;
 }
 h6 {
-  margin: 0;
+  margin: 20px;
   color: #fff;
-  /* position: relative;
-  top: -120px; */
+  text-align: center;
 }
 ul {
   text-align: center;
@@ -50,66 +48,38 @@ button:hover {
   padding: 68px 20px;
 }
 .search-form {
-  width: 50%;
+  width: 80%;
   border-radius: 20px;
   outline: none;
   height: 40px;
   border: 0.7px solid #574a5b;
   background: rgba(231, 231, 231, 0.5);
 }
-.bottom-info {
-  display: block;
-  margin-top: 50px;
-  height: 80px;
-  font-size: 20px;
-  padding: 20px 0 20px 100px;
-  position: relative;
-  bottom: 210px;
-  right: 50px;
-}
-/* .day {
-  margin: auto;
+.weather-forecast {
   text-align: center;
-} */
+  font-size: 18px;
+}
 .date-time {
   font-size: 20px;
 }
 .container {
-  position: relative;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 800px;
-  max-width: 600px;
+  max-width: 700px;
   padding: 20px;
   border-radius: 10px;
   color: #574a5b;
   background: rgba(231, 231, 231, 0.5);
 }
 
-.today {
-  position: relative;
-  left: 100px;
-  bottom: 80px;
-}
-.form-search {
-  position: relative;
-  left: 100px;
-}
-.weather-today {
-  position: relative;
-  bottom: 120px;
-}
 .units {
   position: relative;
   top: -30px;
   font-size: 20px;
 }
+.weather-forecast-temperature-max {
+  font-weight: bold;
+}
 #description {
   text-transform: capitalize;
-}
-.weather-today .active {
-  color: #574a5b;
-  cursor: default;
-}
-.weather-today .active:hover {
-  text-decoration: none;
 }
