@@ -61,16 +61,16 @@ button:hover {
   display: block;
   margin-top: 50px;
   height: 80px;
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px 0 20px 100px;
   position: relative;
   bottom: 210px;
   right: 50px;
 }
-.day {
+/* .day {
   margin: auto;
   text-align: center;
-}
+} */
 .date-time {
   font-size: 20px;
 }
@@ -103,9 +103,6 @@ button:hover {
   position: relative;
   top: -30px;
   font-size: 20px;
-}
-.emoji {
-  font-size: 27px;
 }
 #description {
   text-transform: capitalize;
